@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{372205BD-1B4A-4392-BAAC-D5E109010937}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>E:\SOFTWARE FOR DEVELOPING\Plugins\Plugins C#\Bunifu_UI_v1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard\MessageXS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MessageXS.Designer.cs">
+      <DependentUpon>MessageXS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Warning.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Warning.Designer.cs">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\warningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\warningForm.Designer.cs">
+      <DependentUpon>warningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noready\About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="noready\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseX.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardControls\Estimate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControls\Estimate.Designer.cs">
+      <DependentUpon>Estimate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardControls\Masters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControls\Masters.Designer.cs">
+      <DependentUpon>Masters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardControls\Materials.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControls\Materials.Designer.cs">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardControls\NewStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControls\NewStudent.Designer.cs">
+      <DependentUpon>NewStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboardxs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboardxs.Designer.cs">
+      <DependentUpon>Dashboardxs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardControls\Groups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControls\Groups.Designer.cs">
+      <DependentUpon>Groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noready\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="noready\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardControls\MasterClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControls\MasterClass.Designer.cs">
+      <DependentUpon>MasterClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noready\organization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="noready\organization.Designer.cs">
+      <DependentUpon>organization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Login\Regs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login\Regs.Designer.cs">
+      <DependentUpon>Regs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardControls\Schelude.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControls\Schelude.Designer.cs">
+      <DependentUpon>Schelude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Students.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Students.Designer.cs">
+      <DependentUpon>Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardControls\StudentsX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControls\StudentsX.Designer.cs">
+      <DependentUpon>StudentsX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noready\Support.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="noready\Support.Designer.cs">
+      <DependentUpon>Support.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardControls\Theme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControls\Theme.Designer.cs">
+      <DependentUpon>Theme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noready\ToRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="noready\ToRoom.Designer.cs">
+      <DependentUpon>ToRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="udData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>udData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="udDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>udDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="udDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>udDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dashboardxs.resx">
+      <DependentUpon>Dashboardxs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MessageXS.resx">
+      <DependentUpon>MessageXS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Warning.resx">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\warningForm.resx">
+      <DependentUpon>warningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noready\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControls\Estimate.resx">
+      <DependentUpon>Estimate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControls\Masters.resx">
+      <DependentUpon>Masters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControls\Materials.resx">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControls\NewStudent.resx">
+      <DependentUpon>NewStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControls\Groups.resx">
+      <DependentUpon>Groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noready\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControls\MasterClass.resx">
+      <DependentUpon>MasterClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noready\organization.resx">
+      <DependentUpon>organization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login\Regs.resx">
+      <DependentUpon>Regs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControls\Schelude.resx">
+      <DependentUpon>Schelude.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Students.resx">
+      <DependentUpon>Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControls\StudentsX.resx">
+      <DependentUpon>StudentsX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noready\Support.resx">
+      <DependentUpon>Support.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControls\Theme.resx">
+      <DependentUpon>Theme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noready\ToRoom.resx">
+      <DependentUpon>ToRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BaseX.xsc">
+      <DependentUpon>BaseX.xsd</DependentUpon>
+    </None>
+    <None Include="BaseX.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseX.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BaseX.xss">
+      <DependentUpon>BaseX.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="udData.xsc">
+      <DependentUpon>udData.xsd</DependentUpon>
+    </None>
+    <None Include="udData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>udData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="udData.xss">
+      <DependentUpon>udData.xsd</DependentUpon>
+    </None>
+    <None Include="udDataSet.xsc">
+      <DependentUpon>udDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="udDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>udDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="udDataSet.xss">
+      <DependentUpon>udDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="udDataSet1.xsc">
+      <DependentUpon>udDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="udDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>udDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="udDataSet1.xss">
+      <DependentUpon>udDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bases\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
